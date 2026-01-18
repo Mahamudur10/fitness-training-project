@@ -126,6 +126,61 @@ nav>span {
     border-radius: 50%;
 }
 
+/* Training section */
+.training-exercise {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.taining-text {
+    margin-bottom: 58px;
+    width: 630px;
+}
+
+.taining-text h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.taining-text p {
+    font-size: 0.90rem;
+    font-weight: 200;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.box-2 {
+    grid-column: 2/span 2;
+}
+
+.grid-container>div {
+    position: relative;
+}
+
+.grid-container>div>p {
+    position: absolute;
+    z-index: 50;
+    top: 80%;
+    left: 10%;
+}
+
+.box-4 {
+    grid-column: 1/3;
+}
+
 /* Responsive code */
 
 @media screen and (max-width:500px) {
@@ -154,5 +209,27 @@ nav>span {
     .tooltip {
         right: 5%;
         top: 25%;
+    }
+
+    .taining-text {
+        margin-bottom: 58px;
+        width: 100vw;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-2 {
+        grid-column: auto;
+    }
+
+    .box-4 {
+        grid-column: auto;
+    }
+
+    .box-3,
+    .box-6 {
+        display: none;
     }
 }
