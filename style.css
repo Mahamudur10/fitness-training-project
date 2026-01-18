@@ -126,6 +126,65 @@ nav>span {
     border-radius: 50%;
 }
 
+/* Habit section */
+.habit {
+    max-width: 1200px;
+    margin: 100px auto;
+    min-height: 400px;
+}
+
+.habit-text {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.habit-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.habit-text p {
+    font-size: 0.80rem;
+    font-weight: 200;
+}
+
+.habit-image {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+}
+
+.habit-image img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.habit-image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.habit-image-card h3 {
+    font-size: 1.20rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.habit-image-card p {
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.habit-image-text {
+    width: 230px;
+}
+
 /* Training section */
 .training-exercise {
     max-width: 1200px;
@@ -231,5 +290,14 @@ nav>span {
     .box-3,
     .box-6 {
         display: none;
+    }
+
+    .habit-text {
+        width: 90%;
+    }
+
+    .habit-image {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 }
