@@ -185,6 +185,53 @@ nav>span {
     width: 230px;
 }
 
+/* run extra section */
+.run-extra {
+    max-width: 1200px;
+    margin: 100px auto;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-between;
+    gap: 165px;
+    padding: 40px;
+    background-color: #222222;
+    border-radius: 18px;
+}
+
+.run-text {
+    width: 34%;
+}
+
+.run-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.run-text p {
+    font-size: 0.80rem;
+    font-weight: 200;
+    margin-bottom: 34px;
+}
+
+.run-text>button {
+    padding: 16px 72px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    border-radius: 42px;
+    border: none;
+}
+
+.run-image {
+    width: 40%;
+}
+
+.run-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
 /* Training section */
 .training-exercise {
     max-width: 1200px;
@@ -299,5 +346,22 @@ nav>span {
     .habit-image {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .run-extra {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .run-text {
+        width: 100%;
+    }
+
+    .run-image {
+        width: 100%;
+    }
+
+    .run-image img {
+        width: 100%;
     }
 }
